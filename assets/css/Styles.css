@@ -1,0 +1,32 @@
+/*mobile first*/
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .container{
+        flex-direction: row;
+    }
+    header{
+        flex: 1;
+        background-color: cyan;
+    }
+
+    .main-content{
+        flex: 3;
+        background-color: salmon;
+    }
+    .mobile-menu{
+        visibility: hidden;
+    }
+}
