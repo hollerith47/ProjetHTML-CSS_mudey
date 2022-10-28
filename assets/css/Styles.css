@@ -1,32 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /*mobile first*/
 body{
     margin: 0;
+    padding: 0;
+    font-family: Roboto, serif;
 }
 .container{
     display: flex;
     width: 100vw;
     min-height: 100vh;
-    text-align: center;
+    /*text-align: center;*/
     flex-direction: column;
+    position: relative;
+}
+.navBar{
+    display: none;
+    padding-top: 10%;
 }
 
+/*manipulation de l'image*/
 
+.profil_pic img{
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #ed7825;
+}
+.profil-subtitle{
+    margin-bottom: 30px;
+    margin-top: -10px;
+    opacity: 0.5;
+}
 
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
 
+.profil, .social-icon{
+    text-align: center;
+}
+nav{
+    width: 100%;
+    position: relative;
+    margin-left: -28px;
+    text-align: center;
+}
+.navBar-item ul li{
+    width: 100%;
+    border-bottom: 1px solid rgba(229, 225, 225, 0.5);
+    border-top: 1px solid rgba(229, 225, 225, 0.5);
+    padding: 7px;
+}
+.navBar-item ul li:hover{
+    cursor: pointer;
+    border-right: 2px solid #ed7825;
+}
+.social-icon{
+    cursor: pointer;
+}
+.social-icon i{
+}
+
+/*menu mobile*/
+.mobile-menu{
+    position: absolute;
+    max-width: 100vw;
+    width: 96vw;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: cyan;
+    line-height: 50px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/*main content*/
+.main-content{
+    position: relative;
+    min-height: 90vh;
+    color: white;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-image: url("../images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-content{
+    text-align: center;
+}
+.content-infos p span{
+    border-bottom: 2px solid #ed7825;
+}
 @media screen and (min-width: 768px) {
     .container{
         flex-direction: row;
     }
     header{
         flex: 1;
-        background-color: cyan;
+        background-color: white;
+    }
+    .navBar{
+        display: block;
     }
 
     .main-content{
-        flex: 3;
-        background-color: salmon;
+        flex: 4;
+        /*background-color: salmon;*/
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+
     }
     .mobile-menu{
         visibility: hidden;
     }
+
+
 }
