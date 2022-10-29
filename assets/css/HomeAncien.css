@@ -146,5 +146,199 @@ nav{
         visibility: hidden;
     }
 
+}
+/*------------------------------------------------------------------------------------*/
+/*reconfiguration page*/
+body{
+    overflow-x: hidden;
+}
+.about-content{
+    position: relative;
+    color: black;
+    top: 30px;
+    background-color: white;
+    padding: 0 2%;
+}
+
+/*le titre de la page*/
+.about-title{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about-title h1{
+    font-size: 2em;
+    background: #ed7825;
+    position: relative;
+    padding: 0 10px 0 50px;
+    width: 150px;
+    height: 40px;
+    left: -7px;
+    color: white;
+}
+/*creation du petit triangle*/
+.about-title h1:after{
+    content: " ";
+    top: 40px;
+    right: 203px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid rgba(237, 120, 37, 0.9);
+    border-bottom: 8px solid transparent;
+    position: absolute;
+}
+.about-title span{
+    opacity: .6;
+}
+
+/*partie description et témoignage*/
+.desc-testimonial{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+h2 span{
+    border-bottom: #ed7825 solid 1px;
+    width: 100%;
+}
+.testimonials-item .user{
+    display: flex;
+    width: 100%;
+    position: relative;
+
+}
+.testimonials-item .user img{
+    width: 100px;
+    border-radius: 50%;
+}
+.testimonials-item .citation{
+    width: 60%;
+    border: 1px solid black;
+    margin-left: 80px;
+    border-radius: 10px;
+}
+.testimonials-item .user .user-image{
+    position: relative;
+    top: -30px;
+}
+.testimonials-item .user{
+    position: relative;
+    margin-left: 10px;
+}
+.testimonials-item .user .user-name{
+    position: relative;
+    padding-left: 10px;
+}
+.testimonials-item .user .user-name p{
+    position: relative;
+    top: -10px;
+    opacity: 0.4;
+    font-size: 10px;
+}
+.icon-next-prev{
+    top: 30px;
+    color: black;
+    position: relative;
+    right: -22%;
+
+}
+
+.icon-next-prev i{
+    background: #8babab;
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    line-height: 20px;
+}
+/*Services*/
+.service-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.service-item .s-item-icon{
+    width: 100px;
+    text-align: center;
+}
+.service-item, .clients-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    text-align: center;
+}
+
+/*clients*/
+.clients img{
+    display: flex;
+    width: 100px;
+}
+.clients-items{
+    gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .about-content{
+        flex: 4;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .desc-testimonial, .services, .clients, .fun-facts{
+        padding-left: 4%;
+        padding-right: 8%;
+    }
+    .desc-testimonial .description, .testimonials{
+        flex: 1;
+    }
+    .desc-testimonial{
+        flex-direction: row;
+    }
+    .testimonials-item .citation{
+        width: 55%;
+        border: 1px solid black;
+        margin-left: 80px;
+        border-radius: 10px;
+    }
+    .testimonials-item .user .user-image{
+        position: relative;
+        top: -30px;
+    }
+    .icon-next-prev i{
+        line-height: 20px;
+        padding-left: 10px;
+        cursor: pointer ;
+    }
+    /*    services*/
+    .service-items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        align-content: stretch;
+        gap: 10px;
+    }
+    /*    clients*/
+    .clients-items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+
 
 }

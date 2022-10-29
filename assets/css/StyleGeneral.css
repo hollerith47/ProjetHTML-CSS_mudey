@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 280px;
+    padding: 10px 0;
+    z-index: 100;
+}
+.profil{
+    position: relative;
+    top: 20px;
+    padding-bottom: 20px;
+}
+.profil_pic img{
+    top: 20px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #ed7825;
+}
+.profil-subtitle{
+    margin-bottom: 30px;
+    margin-top: -10px;
+    opacity: 0.5;
+}
+nav ul{
+    position: relative;
+    width: 100%;
+}
+
+nav ul li{
+    list-style: none;
+    /*width: 270px;*/
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.profil-title{
+    padding-bottom: 10px;
+}
+
+.profil, .social-icon{
+    text-align: center;
+}
+nav{
+    width: 100%;
+    position: relative;
+    margin-left: -40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.navBar-item{
+    width: 100%;
+}
+.navBar-item ul li{
+    width: 100%;
+    border-bottom: 1px solid rgba(229, 225, 225, 0.5);
+    border-top: 1px solid rgba(229, 225, 225, 0.5);
+    padding: 7px 0;
+}
+.navBar-item ul li:hover{
+    cursor: pointer;
+    border-right: 2px solid #ed7825;
+    z-index: 15555;
+}
+/*le menu pour smartphone*/
+.mobile-menu{
+    display: none;
+}
+.main-content{
+    position: relative;
+    height: 100vh;
+    left: 280px;
+    width: calc(100% - 280px);
+    overflow-x: hidden;
+    border-left: 10px solid #b3a1a1;
+}
+.social-icon{
+    cursor: pointer;
+}
+/*modifying icon*/
+.fa-brands{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .navBar{
+        display: none;
+    }
+    .mobile-menu{
+        position: fixed;
+        width: 100vw;
+        overflow: hidden;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        background-color: cyan;
+        line-height: 50px;
+        align-items: center;
+        /*padding: 0 10px;*/
+        z-index: 99999;
+    }
+    .mobile-menu .title{
+        flex: 3;
+        padding-left: 10px;
+        justify-content: flex-start;
+        display: flex;
+    }
+    .mobile-menu .icon-menu{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+
+    .main-content{
+        position: absolute;
+        height: calc(100%- 50px);
+        width: 100vw;
+        left: -7px;
+        top:40px
+    }
+
+}
