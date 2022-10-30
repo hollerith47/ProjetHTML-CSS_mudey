@@ -59,11 +59,15 @@
 .titre{
     padding: 0 0 30px 0;
 }
-.edu-items{
+.edu-items, .experience-items{
     border-left: 1px solid black;
 }
 
 /*alignement du contenu skills avec bar de progression*/
+.design-skill{
+    position: relative;
+    margin-right: 50px;
+}
 
 .c-skills{
     width: 100%;
@@ -123,4 +127,66 @@
 /*print design*/
 .d-skills-items .item3 .skill .skill-bar{
     width: 50%;
+}
+
+/*la forme du titre commun entre education et experience*/
+.year{
+    background: #7ed957;
+    position: relative;
+    padding: 0 10px 0 50px;
+    width: fit-content;
+    height: 30px;
+    line-height: 30px;
+    left: -5px;
+    color: white;
+}
+.year:after{
+    content: " ";
+    top: -27px;
+    right: 54px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid #7ed957;
+    border-bottom: 5px solid transparent;
+    position: relative;
+}
+.itemGlobal{
+    padding: 10px 10px 30px 45px;
+    position: relative;
+}
+.itemGlobal .title{
+    font-size:18px;
+}
+.itemGlobal .subtitle{
+    position: relative;
+    font-size:15px;
+    opacity: 0.6;
+    top: -5px;
+}
+
+/*la division download*/
+.download{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.download button{
+    border: 2px solid #ed7825;
+    height: 40px;
+    padding: 0 20px;
+    background: white;
+    transition: 1s ease-in-out;
+}
+.download button:hover{
+    background: #ed7825;
+}
+.download button:hover a{
+    color: white;
+}
+.download button a{
+    text-decoration: none;
+    color: black;
 }
