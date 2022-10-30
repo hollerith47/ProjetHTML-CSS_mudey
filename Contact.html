@@ -6,10 +6,118 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/101a4961b6.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Contact Form</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 <body>
-  <h1>Contact page</h1>
+<div class="container">
+    <header>
+        <div class="navBar">
+            <div class="profil">
+                <div class="profil_pic">
+                    <img src="assets/images/profil1.jpg" alt="Photo de profil">
+                </div>
+                <div class="profil-title">
+                    <h2>Herman Makiese</h2>
+                </div>
+                <div class="profil-subtitle">
+                    Web Designer
+                </div>
+            </div>
+            <nav class="navBar-item">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About me</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="PortFolio.html">PortFolio</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-icon">
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-google-plus"></i>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="title">
+                <h2>Herman Makiese</h2>
+            </div>
+            <div class="icon-menu">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+    </header>
+    <div class="main-content">
+        <div class="Contact-content">
+            <div class="PortFolio-title contact-title">
+                <h1>Contact </h1>
+                <span>Get in Touch</span>
+            </div>
+            <div class="contact-contenu">
+                <div class="get-in-touch">
+                    <h2 class="titre"><span>Get in Touch</span></h2>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Animi culpa cupiditate dolorum excepturi odit provident
+                        quae reprehenderit temporibus, vero voluptas.
+                    </div>
+                    <div class="address-items">
+                        <div class="address-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                Rostov On Don, RUSSIA
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div>
+                                <a href="mailto:hermanmakiese@htech-cloud.com">hermanmakiese@htech-cloud.com</a>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <a href="tel:+79613044882">+7 961 304 48 82</a>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <i class="fa-regular fa-circle-check"></i>
+                            <div>
+                                Freelance Available
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2 class="titre"><span>Contact Form</span></h2>
+                        <form action="" method="post">
+                            <input class="name" type="text" name="name" id="name" placeholder="Full Name">
+<!--                            <i class="fa fa-user icon"></i>-->
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+<!--                            <i class="fa-regular fa-envelope icon"></i>-->
+                            <textarea name="message" id="message"  cols="30" rows="3" placeholder="Message for me"></textarea>
+                            <div class="g-recaptcha"
+                                    data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                            >
+                            </div>
+                            <div>
+                                <button type="submit">Send message</button>
+                                <div class="clear"></div>
+                            </div>
+
+
+                        </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

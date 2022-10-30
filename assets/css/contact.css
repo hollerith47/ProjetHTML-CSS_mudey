@@ -1,0 +1,92 @@
+.Contact-content{
+    margin: 0 2%;
+    padding: 2% 0;
+    position: relative;
+}
+.contact-contenu{
+    margin: 0 25px;
+    display: flex;
+    flex-direction: row;
+}
+.contact-contenu > *{
+    flex: 1;
+}
+.address-items{
+    margin-top: 20px;
+}
+.address-item{
+    display: flex;
+    gap: 15px;
+    line-height: 40px;
+    align-items: center;
+}
+.address-item a{
+    text-decoration: none;
+    color: black;
+}
+.address-item div{
+    font-size: 15px;
+}
+
+.address-item .fa-regular, .address-item .fa-solid{
+    font-size: 30px;
+}
+
+/*la partie contact form*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form >*{
+    flex: 1;
+}
+
+form input, textarea{
+    padding: 10px;
+}
+.g-recaptcha{
+    position: relative;
+    width: 100%;
+}
+button[type='submit']{
+    border: 2px solid #ed7825;
+    height: 40px;
+    padding: 0 20px;
+    background: white;
+    transition: 1s ease-in-out;
+}
+/*ajout des icon dans les input*/
+input[type='text']{
+    background-image: url("../images/input/user.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px ;
+    background-position: right;
+    opacity: .6;
+}
+
+input[type='email']{
+    background-image: url("../images/input/email.svg");
+    background-repeat: no-repeat;
+    background-size: 16px ;
+    background-position: right center;
+    opacity: .6;
+}
+textarea{
+    background-image: url("../images/input/messenger.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px ;
+    background-position: right;
+    opacity: .6;
+}
+
+
+@media screen and (max-width: 1040px){
+    .contact-contenu{
+        flex-direction: column;
+    }
+
+    .contact-form{
+        margin-top: 20px;
+    }
+}
