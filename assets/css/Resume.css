@@ -1,6 +1,4 @@
-.main-content{
-    /*overflow: scroll;*/
-}
+
 .resume-content{
     margin: 0 2%;
     padding: 2% 0;
@@ -162,6 +160,36 @@
     opacity: 0.6;
     top: -5px;
 }
+/*petit amelioration de after year dans la partie responsive*/
+@media screen and (max-width: 1094px) {
+    .experience-items .year:after{
+        top: -56px;
+    }
+
+}
+@media screen and (max-width: 886px){
+    .experience-items .year:after{
+        top: -25px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .contenu{
+        flex-direction: column;
+    }
+    .contenu > *{
+        flex: 1;
+    }
+    .design-skill{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .experience{
+        margin-top: 20px;
+    }
+
+}
+
 
 /*la division download*/
 .download{

@@ -1,0 +1,100 @@
+.PortFolio-content{
+    margin: 0 2%;
+    padding: 2% 0;
+    position: relative;
+}
+.PortFolio-title{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.PortFolio-title h1{
+    font-size: 1.5em;
+    background: #ed7825;
+    position: relative;
+    padding: 0 10px 0 50px;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    left: -30px;
+    color: white;
+}
+
+.PortFolio-title h1:after{
+    content: " ";
+    top: 40px;
+    right: 182px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid rgba(237, 120, 37, 0.9);
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    /*z-index: 999;*/
+}
+.PortFolio-title span{
+    position: relative;
+    left: -15px;
+    opacity: .6;
+}
+/*le  bar de navigation du portfolio*/
+.PortFolio-navBar{
+    position: relative;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    /*background: #ed7825;*/
+}
+
+.PortFolio-navBar ul{
+    display: flex;
+    justify-content: center;
+
+    /*gap: 10px;*/
+}
+.PortFolio-navBar ul li{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.PortFolio-navBar ul li:hover{
+    background-color: #ed7825;
+    color: white;
+}
+
+.PortFolio-navBar ul .active{
+    background-color: #ed7825;
+    color: white;
+}
+
+/*Parti realisations avec photo d'illustration*/
+.PortFolio-realisations{
+    margin-top: 30px;
+    /*padding: 0 10px 0 15px;*/
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.PortFolio-realisations >*{
+    flex: 2;
+
+}
+.PortFolio-realisations img{
+    width: 250px;
+    height: 250px;
+}
+
+@media screen and (max-width: 1030px){
+    .PortFolio-title h1{
+        left: -22px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .PortFolio-title h1{
+        left: -20px;
+    }
+}
