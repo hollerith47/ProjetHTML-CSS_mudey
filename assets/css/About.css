@@ -124,33 +124,38 @@ h2 span{
 }
 
 /*    services*/
-
+.services{
+    position: relative;
+    height: 40%;
+}
+.services img{
+    width: 150px;
+}
 .service-items{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-
-}
-.service-item img{
-    text-align: center;
-}
-.service-item .s-item-icon{
-    width: 100px;
-    text-align: center;
-}
-.service-item, .clients-items{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    align-content: stretch;
-    text-align: center;
+    flex-wrap: wrap;
 }
+.service-item{
+    text-align: center;
+    width: 25%;
+}
+@media screen and (max-width: 620px) {
+    .service-item{
+        text-align: center;
+        width: 50%;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .service-item{
+        text-align: center;
+        width: 100%;
+        padding-top: 10px;
+    }
+}
+
 
 /*    clients*/
 .clients img{
@@ -158,12 +163,10 @@ h2 span{
     width: 100px;
 }
 .clients-items{
-    gap: 10px;
-}
-.clients-items{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
     align-content: center;
@@ -182,6 +185,32 @@ h2 span{
     font-weight: bolder;
     width: 90%;
     height: 150px;
+}
+@media screen and (max-width: 800px) {
+    .fun-facts h2{
+        padding-bottom: 10%;
+    }
+}
+@media screen and (max-width: 530px) {
+    .fun-facts h2{
+        padding-bottom: 12%;
+    }
+}
+@media screen and (max-width: 410px) {
+    .fun-facts h2{
+        padding-bottom: 15%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .fun-facts h2{
+        padding-bottom: 18%;
+    }
+    .fun-facts-items{
+        font-size: 12px;
+        font-weight: bolder;
+        width: 100%;
+        height: 150px;
+    }
 }
 .fun-facts-item{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);

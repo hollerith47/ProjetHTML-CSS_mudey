@@ -84,7 +84,7 @@ nav{
 }
 .main-content{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     left: 280px;
     width: calc(100% - 280px);
     /*overflow-x: hidden;*/
