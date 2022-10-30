@@ -6,7 +6,8 @@
 }
 body{
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
+    /*overflow: hidden;*/
 }
 .container{
     position: relative;
@@ -86,7 +87,7 @@ nav{
     height: 100vh;
     left: 280px;
     width: calc(100% - 280px);
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     border-left: 10px solid #b3a1a1;
 }
 .social-icon{

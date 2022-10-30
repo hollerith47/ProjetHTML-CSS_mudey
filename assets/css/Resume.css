@@ -1,0 +1,126 @@
+.main-content{
+    /*overflow: scroll;*/
+}
+.resume-content{
+    margin: 0 2%;
+    padding: 2% 0;
+}
+.resume-title{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.resume-title h1{
+    font-size: 1.5em;
+    background: #ed7825;
+    position: relative;
+    padding: 0 10px 0 50px;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    left: -30px;
+    color: white;
+    z-index: 15555500000;
+}
+
+/*creation du petit triangle*/
+.resume-title h1:after{
+    content: " ";
+    top: 40px;
+    right: 182px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid rgba(237, 120, 37, 0.9);
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    /*z-index: 999;*/
+}
+.resume-title span{
+    position: relative;
+    left: -15px;
+    opacity: .6;
+}
+.education, .experience, .design-skill, .download{
+    padding: 0 10px 0 20px;
+}
+
+.contenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contenu > *{
+    flex: 2;
+}
+.titre{
+    padding: 0 0 30px 0;
+}
+.edu-items{
+    border-left: 1px solid black;
+}
+
+/*alignement du contenu skills avec bar de progression*/
+
+.c-skills{
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skill{
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    padding: 2px;
+}
+
+/*definition de la barre de progression selon chaque skill*/
+.skill .skill-bar{
+    background: #ed7825;
+    border-radius: 10px;
+    height: 10px;
+}
+/*1. HTML*/
+.item1 .skill .skill-bar{
+    width: 90%;
+}
+/*CSS*/
+.item2 .skill .skill-bar{
+    width: 70%;
+}
+
+/*JQuery*/
+.item3 .skill .skill-bar{
+    width: 60%;
+}
+/*WordPress*/
+.item4 .skill .skill-bar{
+    width: 80%;
+}
+/*PHP*/
+.item5 .skill .skill-bar{
+    width: 50%;
+}
+
+/*pour le design skill*/
+/*Web design*/
+.d-skills-items .item3 .skill .skill-bar{
+    width: 70%;
+}
+/*graphique design*/
+.d-skills-items .item3 .skill .skill-bar{
+    width: 60%;
+}
+/*print design*/
+.d-skills-items .item3 .skill .skill-bar{
+    width: 50%;
+}

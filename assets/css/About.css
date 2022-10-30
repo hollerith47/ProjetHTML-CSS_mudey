@@ -25,6 +25,8 @@
     line-height: 40px;
     left: -30px;
     color: white;
+    z-index: 15555500000;
+
 }
 
 /*creation du petit triangle*/
@@ -52,6 +54,14 @@
     position: relative;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.description{
+    position: relative;
+    width: 90%;
+
 }
 .description p{
     line-height: 30px;
@@ -118,11 +128,11 @@ h2 span{
 .service-items{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: baseline;
-    align-content: stretch;
     gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
 
 }
 .service-item img{
@@ -163,7 +173,7 @@ h2 span{
 .fun-facts-items{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     align-content: center;
