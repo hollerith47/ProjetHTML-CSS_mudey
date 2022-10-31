@@ -1,0 +1,94 @@
+.blog-content{
+    /*margin-right: 40px;*/
+    position: relative;
+}
+.blog-title{
+  /*cfr resume.css ligne 6*/
+}
+.blog-title h1{
+
+    /*cfr resume.css ligne 13*/
+}
+
+/*creation du petit triangle*/
+.blog-title h1:after{
+    /*cfr resume.css ligne 27*/
+}
+.blog-title span{
+    /*cfr resume.css ligne 39*/
+}
+
+.blog-corps{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    width: 70vw;
+    min-height: 100vh;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    margin-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.blog-corps >*{
+    flex: 2;
+}
+
+.blog-items img{
+    height: 200px;
+    width: border-box;
+
+}
+
+.blog-item{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.blog-item .date{
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    background-color: #ed7825;
+    font-size: 18px;
+    width: 40px;
+    height: 50px;
+    line-height: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.blog-item:hover{
+
+}
+
+@media screen and (max-width: 1320px){
+    .blog-corps{
+        width: 72vw;
+    }
+}
+
+@media screen and (max-width: 1284px){
+    div.blog-items{
+        position: relative;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .blog-corps{
+        width: 60vw;
+        text-align: center;
+    }
+    div.blog-items{
+        position: relative;
+        width: 300px;
+    }
+}
+
