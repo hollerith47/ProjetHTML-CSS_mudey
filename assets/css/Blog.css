@@ -51,6 +51,16 @@
     cursor: pointer;
     overflow: hidden;
 }
+.blog-item h4{
+    opacity: .5;
+    font-size: 15px;
+    padding-bottom: 2px;
+}
+.blog-item h3{
+    /*opacity: .5;*/
+    font-size: 18px;
+    padding-bottom: 2px;
+}
 .blog-item .date{
     position: absolute;
     bottom: 50px;
@@ -65,7 +75,8 @@
 }
 
 .blog-item:hover{
-
+    background-color: #ed7825;
+    opacity: .5;
 }
 
 @media screen and (max-width: 1320px){
