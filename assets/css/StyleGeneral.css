@@ -19,7 +19,7 @@ header{
     height: 100%;
     width: 280px;
     padding: 10px 0;
-    z-index: 100;
+    z-index: 9999;
 }
 .profil{
     position: relative;
@@ -101,6 +101,10 @@ nav{
 @media screen and (max-width: 768px){
     .navBar{
         display: none;
+        background-color: white;
+        position: relative;
+        top: 40px;
+        z-index: 9999;
     }
     .mobile-menu{
         position: fixed;
@@ -137,4 +141,15 @@ nav{
         top:40px
     }
 
+}
+
+/*page transition*/
+#home{
+    -webkit-animation: fade .7s ease both;
+    animation: fade .7s ease both;
+}
+
+#about{
+    -webkit-animation: moveToleftFade .7s ease both;
+    animation: moveToLeftFade .7s ease both;
 }

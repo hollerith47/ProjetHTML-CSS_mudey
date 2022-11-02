@@ -88,7 +88,7 @@
 }
 
 @media screen and (max-width: 1030px){
-    .PortFolio-title h1{
+    .PortFolio-title h1, .blog-title h1{
         left: -22px;
     }
 }
