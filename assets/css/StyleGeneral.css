@@ -72,12 +72,22 @@ nav{
     border-bottom: 1px solid rgba(229, 225, 225, 0.5);
     border-top: 1px solid rgba(229, 225, 225, 0.5);
     padding: 7px 0;
+    position: relative;
+}
+.navBar-item ul li a{
+    display: block;
 }
 .navBar-item ul li:hover{
     cursor: pointer;
     border-right: 2px solid #ed7825;
     z-index: 15555;
 }
+/* fonctionnement du active menu */
+.nav-item.active{
+    border-right: 2px solid #ed7825;
+    background-color: #b3a1a16a;
+}
+
 /*le menu pour smartphone*/
 .mobile-menu{
     display: none;
@@ -105,6 +115,7 @@ nav{
         position: relative;
         top: 40px;
         z-index: 9999;
+        width: 100vw;
     }
     .mobile-menu{
         position: fixed;
