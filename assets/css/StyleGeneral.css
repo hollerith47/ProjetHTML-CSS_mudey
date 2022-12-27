@@ -63,9 +63,12 @@ nav{
     margin-left: -40px;
     text-align: center;
     padding-bottom: 40px;
+    transition: all .5s ease-in-out;
+    
 }
 .navBar-item{
     width: 100%;
+    transition: all .2s ease;
 }
 .navBar-item ul li{
     width: 100%;
@@ -86,6 +89,20 @@ nav{
 .nav-item.active{
     border-right: 2px solid #ed7825;
     background-color: #b3a1a16a;
+}
+.nav-item, .navBar.closeMenu{
+    /* animation */
+    animation:.3s slideRight ease-in forwards; 
+    transition-delay:0;
+    transition: all .5s ease-in-out;
+}
+.navBar.disparition{
+    animation:1s slideLeft ease-out forwards; 
+    transition-delay:0;
+}
+.navBar.visible{
+    animation:1s slideLeft ease-out forwards; 
+    transition-delay:0;
 }
 
 /*le menu pour smartphone*/
@@ -116,6 +133,11 @@ nav{
         top: 40px;
         z-index: 9999;
         width: 100vw;
+        /* animation */
+        animation:.5s slideRight ease-in forwards;
+        transition-delay:0;
+        transition: all .5s ease-in-out;
+
     }
     .mobile-menu{
         position: fixed;
@@ -163,4 +185,24 @@ nav{
 #about{
     -webkit-animation: moveToleftFade .7s ease both;
     animation: moveToLeftFade .7s ease both;
+}
+
+/* Animations pour le menu */
+@keyframes slideRight {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+@keyframes slideLeft {
+	from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: -300%;
+    }
 }

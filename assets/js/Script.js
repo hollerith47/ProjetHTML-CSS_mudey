@@ -5,19 +5,28 @@ window.onload = () => {
 
   if (MenuIcon) {
     MenuIcon.addEventListener("click", () => {
-      console.log("icon-menu");
+      //console.log("icon-menu");
       if (NavBar.style.display === "block") {
         NavBar.style.display = "none";
+        NavBar.classList.remove("disparition");
       } else {
         NavBar.style.display = "block";
+        console.log("open click");
+        if (links.length) {
+          links.forEach((link) => {
+            link.addEventListener("click", () => {
+              NavBar.classList.add("disparition");
+            });
+          });
+        }
       }
-      // NavBar.style.display = 'none';
     });
   }
 
   if (links.length) {
     links.forEach((link) => {
       link.addEventListener("click", (e) => {
+        // NavBar.style.display = "none";
         links.forEach((link) => {
           link.classList.remove("active");
         });
